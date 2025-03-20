@@ -1,0 +1,163 @@
+/* Header Styles */
+header {
+  background-color: #fff;
+  padding: 20px 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+  top: 0;
+  box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+  
+  /* Mobile Menu Button */
+  .menu-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    display: none;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    display: flex;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-list li {
+    margin: 0 20px;
+    position: relative;
+  }
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  .nav-list li a{
+    color: #222;
+    font-size: 15px;
+  }
+  
+  /* Mega Dropdown */
+  .mega-dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    color: black;
+    width: 400px;
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  .mega-dropdown div {
+    margin-right: 40px;
+  }
+  .mega-dropdown h3 {
+    margin-top: 0;
+    color: #42b983;
+  }
+  .mega-dropdown a {
+    display: block;
+    margin: 5px 0;
+    color: black;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+    nav.mobile-active {
+      display: flex;
+    }
+    .nav-list {
+      flex-direction: column;
+    }
+    .nav-list li {
+      margin: 10px 0;
+    }
+    .mega-dropdown {
+      position: relative;
+      width: 100%;
+      box-shadow: none;
+      border-radius: 0;
+      flex-direction: column;
+    }
+  }
+
+  .logo{
+    color: #222;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  .userpfr{
+    padding: 0;
+    background: transparent;
+    color: #222;
+    border: none;
+  }
+  .cart-container{
+    position: relative;
+  }
+  .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.userprofile ul{padding: 0; margin: 0;}
+.userprofile li{
+  display: flex;
+}
+.logo a{
+  text-decoration: none;
+}
+
+@media (max-width:767px){
+  .menu-btn{
+    color: #222;
+    margin-right: 15px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+  padding: 5px 20px;
+}
+.nav-list li a{
+   display: flex;
+    justify-content: space-between;
+}
+
+}

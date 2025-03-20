@@ -1,0 +1,248 @@
+.container{
+    max-width: 960px;
+}
+
+  .search-container {
+    margin-bottom: 20px;
+  }
+  input.search {
+    padding: 8px;
+    width: 70%;
+    margin-right: 10px;
+    background: #f3ecff;
+    border: none;
+    border-radius: 5px;
+}
+button.searchbtn {
+    background-color: #e8122f;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+    border-radius: 3px !important;
+}
+.filter-button{
+    background-color: #e8122f;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+    border-radius: 3px !important;
+}
+  button:disabled {
+    background-color: #ccc;
+  }
+  .card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .mt100{
+    margin-top: 120px;
+  }
+  /* Filter Button */
+
+  
+  /* Overlay (Full Screen) */
+  .filter-overlay {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: 111;
+    justify-content: right;
+    display: flex;
+    padding: 0 !important;
+}
+.overlay-box {
+    width: 360px;
+    
+    background: #fff;
+    height: 100vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.allfilter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.allfilter div{
+    font-weight: 700;
+    font-size: 20px;
+}
+.allfilter button{
+    background-color: transparent;
+    border: none;
+    color: #222;
+    border: none;
+}
+.accordion-button:not(.collapsed){
+    background-color: #fff !important;
+}
+.accordion-button {
+    border-bottom: 1px solid #ccc !important;
+    border-radius: 0!important;
+}
+.accordion-body{
+    text-transform:capitalize;
+}
+.accordion-body label{
+    padding-left: 5px;
+}
+.title {
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 0;
+}
+.price{
+    text-align: left;
+}
+.card-item{
+    padding: 20px;
+    border: none !important;
+}
+.card-item:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-item {
+    display: flex;
+    align-items: center;
+}
+.btn-item button{
+    background: #444fe3;
+    color: #fff;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 20px;
+}
+.fa-heart{
+    font-size: 18px;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+}
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #444fe3;
+    color: #fff;
+    border: none;
+}
+.pagination button:disabled{
+    background-color: #ccc;
+}
+.order-summery h4{
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+.order-summery{
+    background:#f2eded;
+}
+.order-body{
+    padding: 0px 20px 20px;
+}
+.stotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.textAmt,.amount{
+    font-weight: 600;
+}
+.coupon{
+    padding-top: 10px;
+}
+.coupon a {
+    color: #994444;
+    font-size: 14px;
+    text-decoration: none;
+}
+.carttle {
+    padding-top: 20px;
+    background: #ded7d7;
+}
+button.checkout {
+    padding: 10px !important;
+    width: 100%;
+    color: #fff !important;
+    border: none;
+    margin: 10px 0 !important;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: #f02 !important;
+}
+.swiftbtn {
+    background: #ccc;
+    display: flex;
+    width: 90px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.swiftbtn button {
+    margin: 0 !important;
+    background: none !important;
+    color: #222 !important;
+}
+.cancelitem{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.pagination{
+    margin-bottom: 20px;
+}
+
+@media (max-width:767px){
+    input.search {
+        width: 50%;
+      }
+      .card-item {
+        padding: 20px;
+        border: var(--bs-card-border-width) solid var(--bs-card-border-color) !important;
+        margin-top: 10px;
+      }
+      .filter-overlay {
+        padding: 0 !important;
+    }
+    .overlay-box {
+        width: 260px;
+    }
+    .accordion-body {
+        overflow: scroll;
+        height: 150px;
+    }
+    img[data-v-8a133b02] {
+        width: 70px;
+        height: 70px;
+    }
+    .order-summery{
+        margin-top: 10px;
+    }
+}
